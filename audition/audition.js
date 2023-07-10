@@ -4,7 +4,7 @@ const news = document.querySelector("main .first-page-container .txt-wrapper");
 const fp = document.querySelector("main .first-page-container");
 const fph = document.querySelector("main .first-page-container").clientHeight;
 const fpo = document.querySelector("main .first-page-container").offsetTop;
-const spo = document.querySelector("main .second-page-container").offsetTop;
+// const spo = document.querySelector("main .second-page-container").offsetTop;
 const tpo = document.querySelector("main .third-page-container").offsetTop;
 
 
@@ -68,14 +68,14 @@ var app = function () {
 
 
 // 공용 하단바 움직임
-const footer = document.querySelector('footer');
-const scroll4 = () => {
-  if(scrollY > fp) {
-    footer.style.opacity = 1;
-  }else {
-    footer.style.opacity = 1;
-  }
-}
-addEventListener("scroll", scroll4);
+// const footer = document.querySelector('footer');
+// const scroll4 = () => {
+//   if(scrollY > fp) {
+//     footer.style.opacity = 1;
+//   }else {
+//     footer.style.opacity = 1;
+//   }
+// }
+// addEventListener("scroll", scroll4);
 // addEventListener("scroll", scroll2);
 
