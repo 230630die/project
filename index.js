@@ -12,11 +12,12 @@ const img = document.querySelectorAll('.img-wrapper img')
 let num = 0; /* 슬라이드 기준 함수 */ 
 const pb = document.querySelector('.prev');
 const nb = document.querySelector('.next');
+
 const prevevt = () => {
   --num;
   if(num < 0) {
-    $('main .first-page-container .first-page-slide .slide-box').animate({left: -2100 + 'px'}, 300);
-    num=2; 
+    $('main .first-page-container .first-page-slide .slide-box').animate({left: -3150 + 'px'}, 300);
+    num=3; 
   } else if ((num >-1) || (num=0)) {
     $('main .first-page-container .first-page-slide .slide-box').animate({left: -1050 * num + 'px'}, 300);    
   }
@@ -31,7 +32,7 @@ const prevevt = () => {
 }
 const nextevt = () => {
   ++num;
-    if (num < 3) {
+    if (num < 4) {
       $('main .first-page-container .first-page-slide .slide-box').animate({left: -1050 * num + 'px'}, 300);
     } else {
       $('main .first-page-container .first-page-slide .slide-box').animate({left: 0 + 'px'}, 300)
@@ -225,7 +226,9 @@ const come = () => {
 }
 logo.addEventListener('click',come);
 
-
+$('a.none').on('click', (e) => {
+  e.preventDefault();
+})
 
 // 로그 확인용
 // const log = () => {
