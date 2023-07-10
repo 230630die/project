@@ -1,3 +1,3 @@
 ## GUIDE LINE
 
-https://github.com/230630die/project/gulideline.pdf
+https://230630die.github.io/project/guideline.pdf
