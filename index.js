@@ -40,7 +40,7 @@ const nextevt = () => {
     }
     counts.forEach((a,idx,arr)=> {
       a.classList.remove('active')
-      arr[num].classList.add('active');
+      arr[num].classList.add('active'); 
     })
     img.forEach((a,idx,arr)=> {
       a.classList.remove('active')
@@ -88,11 +88,24 @@ const countevent3 = () => {
       arr[num].classList.add('active');
     })
 }
+const countevent4 = () => {
+    num = 3
+    $('main .first-page-container .first-page-slide .slide-box').animate({left: -1050 * num + 'px'}, 300);
+    counts.forEach((a,idx,arr)=> {
+      a.classList.remove('active')
+      arr[num].classList.add('active');
+    })
+    img.forEach((a,idx,arr)=> {
+      a.classList.remove('active')
+      arr[num].classList.add('active');
+    })
+}
 
 counts.forEach((a,idx,arr) => {
   arr[0].addEventListener('click',countevent1);
   arr[1].addEventListener('click',countevent2);
   arr[2].addEventListener('click',countevent3);
+  arr[3].addEventListener('click',countevent4);
 })
 
 

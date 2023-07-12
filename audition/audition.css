@@ -73,10 +73,10 @@ main .second-page-container .txt-wrapper {
   width: 700px;
 }
 main .second-page-container .txt-wrapper p {
-  font-weight: 400;
+  font-weight: 300;
   display: block;
   height: 10%;
-  line-height: 130%;
+  line-height: var(--inner-line-heigth);
 }
 main .second-page-container .txt-wrapper .block {
   height: 30px;
